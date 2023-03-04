@@ -33,13 +33,13 @@ function render(variables = {}) {
   document.querySelector("#widget_content").innerHTML = `<div class="widget">
             ${cover}
           <img src="${variables.avatarURL}" class="photo" />
-          <h1>${variables.name ? variables.name : ""} ${
-    variables.lastname ? variables.lastname : ""
+          <h1>${variables.name ? variables.name : "Name"} ${
+    variables.lastname ? variables.lastname : "LastName"
   }</h1>
-          <h2>${variables.role ? variables.role : ""}</h2>
-          <h3>${variables.city ? variables.city : ""}${
-    variables.city && variables.country ? ", " : ""
-  }${variables.country ? variables.country : ""}</h3>
+          <h2>${variables.role ? variables.role : "Role"}</h2>
+          <h3>${variables.city ? variables.city : "City"}${
+    variables.city && variables.country ? ", " : ", "
+  }${variables.country ? variables.country : "Country"}</h3>
           <ul class="${
             variables.socialMediaPosition ? variables.socialMediaPosition : ""
           }">
